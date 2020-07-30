@@ -53,6 +53,10 @@ class Video{
     {
         return $this->sqlData["episode"];
     }
+    public function getSeasonNumber()
+    {
+        return $this->sqlData["season"];
+    }
 
     public function incrementViews()
     {
