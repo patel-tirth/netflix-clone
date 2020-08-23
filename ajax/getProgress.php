@@ -9,10 +9,6 @@ if(isset($_POST["videoId"]) && isset($_POST["username"]) )
     $query->bindValue(":videoId",$_POST["videoId"]);
     $query->execute();
     echo $query->fetchColumn();
-    
-
-  
-
 }
 else
 {
