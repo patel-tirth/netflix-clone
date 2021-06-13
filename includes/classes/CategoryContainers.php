@@ -44,7 +44,7 @@ class CategoryContainers{
 
         if($tvShows && $movies)
         {
-            $entities = EntityProvider::getEntities($this->con,$categoryId, 30);
+            $entities = (new EntityProvider)->getEntities($this->con,$categoryId, 30);
         }
         else if ($tvShows)
         {
