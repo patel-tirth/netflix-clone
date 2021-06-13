@@ -17,7 +17,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 // date_default_timezone_set("America/Chicago");
 
 // try{
-//     $con = new PDO("mysql:dbname=netlix;host=us-cdbr-east-04.cleardb.com","bf07d4fbc85d61","b754e611");
+//     $con = new PDO("mysql:dbname=netlix;host=localhost","root","password");
 //     $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 // }
 
