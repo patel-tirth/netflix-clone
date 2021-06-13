@@ -16,7 +16,7 @@ require_once("includes/classes/Constants.php");
          if($success)
          { 
              $_SESSION["userLoggedIn"] = $username;
-             header("Location: index.php");
+             header("Location: https://pure-eyrie-37631.herokuapp.com/index.php");
          }
     }
 
