@@ -69,7 +69,7 @@ class PreviewProvider{
 
     //    return new Entity($this->con, $row);
 
-    $entity = EntityProvider::getEntities($this->con, null, 1);
+    $entity = (new EntityProvider)->getEntities($this->con, null, 1);
 
     return $entity[0];
 
