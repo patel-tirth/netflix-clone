@@ -21,12 +21,15 @@ $upNextVideo = VideoProvider::getUpNext($con, $video);
     </div>
     <div class="videoControls upNext">
         <button><i class="fas fa-redo"></i></button>
-    </div>
-    <div class="upNextContainer">
-        <h2>Up next:</h2>
-        <h3><?php echo $upNextVideo->getTitle(); ?></h3>
-        <h3><?php echo $upNextVideo->getSeasonAndEpisode(); ?></h3>
-
+   
+        <div class="upNextContainer">
+            <h2>Up next:</h2>
+            <h3><?php echo $upNextVideo->getTitle(); ?></h3>
+            <h3><?php echo $upNextVideo->getSeasonAndEpisode(); ?></h3>
+            <button class="playNext"> 
+            <i class="fas fa-play">Play</i>
+            </button>
+        </div>
     </div>
     <video controls autoplay>
         <source src='<?php echo $video->getFilePath(); ?>' type="video/mp4">
