@@ -124,6 +124,12 @@ body{
     font-size: 40px;
     margin: 15px 0;
 }
+.previewOverlay .mainDetails h4{
+    color: #fff;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
 
 .previewOverlay .mainDetails{
     position: relative;
@@ -186,6 +192,7 @@ body{
 
  a{
      text-decoration: none;
+     color: #0654ba;
  }
  .previewCategories{
      padding: 0 50px;
@@ -217,6 +224,7 @@ body{
      display:flex;
      flex-direction: column;
      width:230px;
+     position: relative;
 
  }
 
@@ -279,4 +287,134 @@ body{
 
 .watchNav{
     z-index: 2;
+}
+
+.seen {
+    color: #2ecc71;
+    font-size: 26px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.topBar {
+    padding: 0 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    box-sizing: border-box;
+    min-width: 1050px;
+    transition: background-color 200ms linear;
+}
+
+.topBar.scrolled {
+    background-color: #141414; 
+    transition: background-color 200ms linear;
+}
+.logoContainer {
+    height: 40px;
+}
+
+.logoContainer img{
+    height: 100%;
+}
+.navLinks {
+    display: flex;
+    list-style: none;
+}
+
+.navLinks a{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.rightItems {
+    text-align: right;
+    flex : 1;    
+}
+
+.rightItems i{
+    color: #fff;
+    font-size : 20px;   
+    margin-left: 10px; 
+}
+
+.previewCategories h1 {
+color: #efefef;    
+}
+
+.textBoxContainer {
+    padding: 100px 50px;
+}
+
+.searchInput {
+    height: 50px;   
+    width: 600px;
+    border: 1px solid #dedede;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 3px; 
+}
+
+.settingsContainer {
+    padding-top: 60px;
+    background-color: transparent;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.settingsContainer h2{
+    color: #fff;
+    margin-top: 0;
+}
+
+.settingsContainer .formSection {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 ;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 20px;
+}
+
+.settingsContainer form input[type="text"],
+.settingsContainer form input[type="email"],
+.settingsContainer form input[type="password"]{
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.settingsContainer form input[type="submit"] {
+    background-color: #dc1928;
+    width: 100px;
+    height: 40px;
+}
+
+.alertSuccess,
+.alertError{
+    margin: 10px 0;
+}
+
+.alertError{
+    color: #dc1928;
+}
+
+.alertSuccess{
+    color: #2ecc71;
+}
+
+.formSection h3 {
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
 }

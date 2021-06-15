@@ -1,10 +1,20 @@
 <?php
+$hideNav = true;
 require_once("includes/header.php");
 
 if(!isset($_GET["id"]))
 {
     ErrorMessage::show("No Id passed into page");
 }
+
+$user = new User($con, $userLoggedIn);
+
+if(!$user->getIsSubscribed()){
+    ErrorMessage::show("You must be subscribed to see this.
+                        <a href='profile.php'>Click here to subscribe</a>");
+
+}
+
 
 $video = new Video($con, $_GET["id"]);
 
