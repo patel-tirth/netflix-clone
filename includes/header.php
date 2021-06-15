@@ -40,7 +40,7 @@ $userLoggedIn = $_SESSION["userLoggedIn"];
       
   <?php 
   if (!isset($hideNav)){
-      include_once("includes/navBar.php");
+      include_once("includes/navbar.php");
   }
   ?>
   
